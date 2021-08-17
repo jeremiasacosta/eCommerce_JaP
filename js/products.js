@@ -13,13 +13,15 @@ function mostrarListaProductos(lista) {
     <a href="category-info.html" class="list-group-item list-group-item-action">
         <div class="row">
             <div class="col-3">
-                <img src="` + product.imgSrc + `" alt="` + product.description + `" class="img-thumbnail">
+                <img src="` + product.imgSrc + `" class="img-thumbnail">
             </div>
-            <div> 
-            <h1>` + product.name + `</h1>
-            <p>Precio: $` + product.cost + product.currency + `</p>
-            <p>Disponibilidad:  ` + product.soldCount + `<p>
-            <p>Descripción:  ` + product.description + `<p>
+            <div class="col">
+                <div class="d-flex w-100 justify-content-between"> 
+                    <h3 class="mb-1">` + product.name + `</h3>
+                    <small class="text-muted">` + product.soldCount + ` artículos</small>
+                </div>
+                <p class="mb-1">` +  product.cost + ` ` + product.currency + `</p>
+                <p class="mb-1">Detalle: ` + product.description + `</p>
             </div>
         </div>
     </a>
