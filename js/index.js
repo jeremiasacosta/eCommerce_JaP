@@ -9,7 +9,7 @@ function validar(){
     let usuario = document.getElementById("usuar").value;
     let contrasenia = document.getElementById("contra").value;
     if((usuario !== "") && (contrasenia !== "")){
-        window.location.href= "index.html";
+        window.location.href= "index1.html";
     } 
     else{
         alert("Usuario y/o Contraseña incorrecto");
